@@ -356,6 +356,9 @@ html {
 
 
 /* project-section */
+.project-section{
+  background-color: #f9fafb;
+}
 .project-head{
     background: linear-gradient(to right, #0b5ea2, #1d92ff);
     background-repeat: no-repeat;
@@ -369,6 +372,9 @@ html {
 @media screen and (min-width: 0px) and (max-width: 425px){
 .project-head{
     background-size: 35% 4px;
+}
+.project{
+  margin-bottom: 30px;
 }
 }
 .project-img{
@@ -393,15 +399,23 @@ html {
 .tech{
   width: 100%;
     display: inline-flex;
-  justify-content: space-evenly;
 }
 .tech p{
   background-color: #e0e7ff;
   color: #117bd1;
-  /* margin-right: 13px; */
+  margin-right: 13px;
   padding: 2px 8px;
   border-radius: 15px;
   font-weight: 500;
+}
+.skill-js{
+    background-color: #e0e7ff;
+  color: #117bd1;
+  margin-right: 13px;
+  padding: 2px 8px;
+  border-radius: 15px;
+  font-weight: 500;
+  /* width: 20px; */
 }
 .btns a{
   text-decoration: none;
@@ -429,4 +443,43 @@ html {
   align-items: center;
       font-size: clamp(1rem, 5vw, 1rem);
     font-weight: 500;
+}
+
+.contact-form{
+  background-color: #f9fafb;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+  padding: 20px 20px;
+}
+.contact-form input{
+  border: none;
+  padding: 5px 10px;
+}
+.contact-form input::placeholder{
+  color: #0b5ea2;
+  font-weight: bold;
+}
+.contact-form textarea{
+  border: none;
+  padding: 5px 10px;
+}
+.contact-form textarea::placeholder{
+  color: #0b5ea2;
+  font-weight: bold;
+}
+.contact-form button{
+  background-color: #0b5ea2;
+  color: white;
+  padding: 3px 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+      font-size: clamp(1rem, 5vw, 1rem);
+    font-weight: 500;
+    border: none;
+}
+.contact-info div{
+  padding-bottom: 5px;
 }

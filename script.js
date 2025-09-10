@@ -14,7 +14,7 @@ closeBtn.addEventListener('click', () => {
 
 
 // Animation
-const texts = ["Web Developer","React Specialist", "Frontend Designer", "JavaScript Developer","UI/UX Enthusiast"];
+const texts = ["MERN Stack Developer","Backend Developer","Web Developer","React Specialist", "Frontend Designer", "JavaScript Developer","UI/UX Enthusiast"];
   let count = 0;
   let index = 0;
   let currentText = "";
@@ -37,4 +37,12 @@ const texts = ["Web Developer","React Specialist", "Frontend Designer", "JavaScr
 
   type();
 
- 
+ // contact-form
+
+ const contactForm = document.querySelector('.contact-form');
+
+ contactForm.addEventListener('submit', (event) => {
+   event.preventDefault();
+   alert('Form submitted successfully!');
+   contactForm.reset();
+ });
